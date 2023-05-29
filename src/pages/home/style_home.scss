@@ -1,0 +1,854 @@
+.home {
+  margin-bottom: 100px;
+  &__header {
+    display: flex;
+    img {
+      height: 100%;
+    }
+    &__text {
+      background: #154444;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 100px;
+      padding-right: 50px;
+      &__extra-large-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+        margin-bottom: 20px;
+      }
+      color: #ffffff;
+    }
+  }
+  &__payment-services {
+    margin-top: 140px;
+    &__block-title {
+      display: flex;
+      justify-content: center;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+
+      color: #244d4d;
+    }
+    &__block-payments {
+      margin-top: 40px;
+      display: flex;
+
+      > div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+}
+div#privet {
+  position: relative;
+  }
+  .privet {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(17em, 25em);
+  text-transform: uppercase;
+  color: #000000;
+  width: 500px;
+  font-family: 'Inter';
+  font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .privet span {
+  font: bold 24px/54px Helvetica, Sans-Serif;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 62px;
+  padding: 0px;
+  }
+
+  div#text_priveta {
+    position: relative;
+    }
+    .text_priveta {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-3.5em, 97em);
+    text-transform: uppercase;
+    color: #000000;
+    width: 1500px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .text_priveta {
+    font: bold 24px/54px Helvetica, Sans-Serif;
+    text-align: center;
+    font-size: 33px;
+    padding: 0px;
+    }
+
+    div#nasha {
+      position: relative;
+      }
+      .nasha {
+      position: absolute;
+      bottom: 50%;
+      transform: translate(-5em, -8em);
+      text-transform: uppercase;
+      color: #000000;
+      width: 1500px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      .nasha {
+      font: 24px/54px courier ;
+      text-align: center;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 96px;
+      padding: 0px;
+      }
+
+      div#prodyk {
+        position: relative;
+        }
+        .prodyk {
+        position: absolute;
+        bottom: 50%;
+        transform: translate(-2em, -5em);
+        text-transform: uppercase;
+        color: #000000;
+        width: 1500px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .prodyk {
+        font: 24px/54px courier ;
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 96px;
+        padding: 0px;
+        }
+
+       body {
+          height: 100%;
+          margin: 0px;
+        }
+        
+        .slider-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+        
+        .slider {
+          width: 30%;
+          max-width: 600px;
+          height: 400px;
+          transform: translate(13em, 5em);
+          text-align: center;
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .slides {
+          display: flex;
+          overflow-x: scroll;
+          position: relative;
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+        }
+        
+        .slide:nth-of-type(even) {
+          background-color: #F2C13C;
+        }
+        
+        .slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          width: 100%;
+          height: 400px;
+          scroll-snap-align: center;
+          margin-right: 0px;
+          box-sizing: border-box;
+          background: #F2C13C;
+          transform-origin: center center;
+          transform: scale(1);
+        }
+        
+        .slide__text {
+          font-size: 40px;
+          font-weight: bold;
+          font-family: sans-serif;
+        }
+        
+        .slide a {
+          background: none;
+          border: none;
+        }
+        
+        a.slide__prev,
+        .slider::before {
+          transform: rotate(135deg);
+          -webkit-transform: rotate(135deg);
+          left: 5%;
+        }
+        
+        a.slide__next,
+        .slider::after {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          right: 5%;
+        }
+        
+        .slider::before,
+        .slider::after,
+        .slide__prev,
+        .slide__next {
+          position: absolute;
+          top: 48%;
+          width: 35px;
+          height: 35px;
+          border: solid black;
+          border-width: 0 4px 4px 0;
+          padding: 3px;
+          box-sizing: border-box;
+        }
+        
+        .slider::before,
+        .slider::after {
+          content: "";
+          z-index: 1;
+          background: none;
+          pointer-events: none;
+        }
+        
+        .slider__navlink {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background-color: black;
+          margin: 0 10px 0 10px;
+        }
+      
+        .read-article{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 999;
+          color: #000;
+          background: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          font-family: arial;
+          text-decoration: none;
+          box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+        }
+        .read-article:hover{
+            background: #d5d5d5;
+            box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+        }
+
+
+        iframe[sandbox] .read-article{
+          display: none;
+        }
+        .container_slider_css{
+        margin:50px auto;
+        width:900px;
+        height:400px;
+        transform: translate(-14em, 10em);
+        overflow:visible;
+        position:relative
+      }
+        .photo_slider_css{position:absolute;
+          animation:round 12s infinite;
+          opacity:0;
+          width:100%
+        }
+        @keyframes round {
+        25%{opacity:1}
+        40%{opacity:0}
+        }
+        img:nth-child(1){animation-delay:8s}
+        img:nth-child(2){animation-delay:4s}
+        img:nth-child(3){animation-delay:0s}
+        @media(min-width:0px) and (max-width:320px) {
+        .container_slider_css{
+          width:80%;
+          height:190px}
+        }
+        @media(min-width:321px) and (max-width:480px) {
+        .container_slider_css{
+          width:80%;
+          height:190px}
+        }
+  
+
+        div#xit {
+          position: relative;
+          }
+          .xit {
+          position: absolute;
+          bottom: 50%;
+          transform: translate(0em, 3.5em);
+          text-transform: uppercase;
+          color: #000000;
+          width: 1500px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          }
+          .xit {
+          font: 24px/54px courier ;
+          text-align: center;
+          font-family: Verdana, Arial, Helvetica, sans-serif;
+          font-style: normal;
+          font-size: 96px;
+          padding: 0px;
+          }
+    
+
+          .card1 {
+            width: 225px;
+            min-height: 350px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Размещаем элементы в колонку */
+            border-radius: 4px;
+            transition: 0.2s;
+            transform: translate(4em, 18em);
+            position: relative;
+          }
+          
+          /* При наведении на карточку - меняем цвет тени */
+          .card1:hover {
+            box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+          }
+          
+          .card1__top {
+            flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+            position: relative;
+            overflow: hidden; /* Скрываем, что выходит за пределы */
+          }
+          
+          /* Контейнер для картинки */
+          .card1__image {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+          .card1__image > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+            transition: 0.2s;
+          }
+          
+          /* При наведении - увеличиваем картинку */
+          .card1__image:hover > img {
+            transform: scale(1.1);
+          }
+          
+          /* Размещаем скидку на товар относительно изображения */
+          .card1__label {
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: #ff6633;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+          }
+          
+          .card1__bottom {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+            padding: 10px;
+          }
+          
+          .card1__prices {
+            display: flex;
+            margin-bottom: 10px;
+            flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+          }
+          
+          .card1__price::after {
+            content: "₽";
+            margin-left: 4px;
+            position: relative;
+          }
+          
+          .card1__price--discount {
+            font-weight: 700;
+            font-size: 19px;
+            color: #414141;
+            display: flex;
+            flex-wrap: wrap-reverse;
+          }
+          
+          .card1__price--discount::before {
+            content: "Со скидкой";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card1__price--common {
+            font-weight: 400;
+            font-size: 17px;
+            color: #606060;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: flex-end;
+          }
+          
+          .card1__price--common::before {
+            content: "Обычная";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card1__title {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 150%;
+            color: #414141;
+          }
+          
+          .card1__title:hover {
+            color: #ff6633;
+          }
+          
+          .card1__add {
+            display: block;
+            width: 100%;
+            font-weight: 400;
+            font-size: 17px;
+            color: #ff0000;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ff0000;
+            border-radius: 4px;
+            cursor: pointer; /* Меняем курсор при наведении */
+            transition: 0.2s;
+            margin-top: auto; /* Прижимаем кнопку к низу карточки */
+          }
+          
+          .card1__add:hover {
+            border: 1px solid #ff6633;
+            background-color: #ff6633;
+            color: #fff;
+          }
+
+
+          .card2 {
+            width: 225px;
+            min-height: 350px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Размещаем элементы в колонку */
+            border-radius: 4px;
+            transition: 0.2s;
+            transform: translate(18em, 3.2em);
+            position: relative;
+          }
+          
+          /* При наведении на карточку - меняем цвет тени */
+          .card2:hover {
+            box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+          }
+          
+          .card2__top {
+            flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+            position: relative;
+            overflow: hidden; /* Скрываем, что выходит за пределы */
+          }
+          
+          /* Контейнер для картинки */
+          .card2__image {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+          .card2__image > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+            transition: 0.2s;
+          }
+          
+          /* При наведении - увеличиваем картинку */
+          .card2__image:hover > img {
+            transform: scale(1.1);
+          }
+          
+          /* Размещаем скидку на товар относительно изображения */
+          .card2__label {
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: #ff6633;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+          }
+          
+          .card2__bottom {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+            padding: 10px;
+          }
+          
+          .card2__prices {
+            display: flex;
+            margin-bottom: 10px;
+            flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+          }
+          
+          .card2__price::after {
+            content: "₽";
+            margin-left: 4px;
+            position: relative;
+          }
+          
+          .card2__price--discount {
+            font-weight: 700;
+            font-size: 19px;
+            color: #414141;
+            display: flex;
+            flex-wrap: wrap-reverse;
+          }
+          
+          .card2__price--discount::before {
+            content: "Со скидкой";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card2__price--common {
+            font-weight: 400;
+            font-size: 17px;
+            color: #000000;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: flex-end;
+          }
+          
+          .card2__price--common::before {
+            content: "Обычная";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card2__title {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 150%;
+            color: #414141;
+          }
+          
+          .card2__title:hover {
+            color: #ff6633;
+          }
+          
+          .card2__add {
+            display: block;
+            width: 100%;
+            font-weight: 400;
+            font-size: 17px;
+            color: #ff0000;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ff0000;
+            border-radius: 4px;
+            cursor: pointer; /* Меняем курсор при наведении */
+            transition: 0.2s;
+            margin-top: auto; /* Прижимаем кнопку к низу карточки */
+          }
+          
+          .card2__add:hover {
+            border: 1px solid #ff6633;
+            background-color: #ff6633;
+            color: #fff;
+          }
+
+
+
+          .card3 {
+            width: 225px;
+            min-height: 350px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Размещаем элементы в колонку */
+            border-radius: 4px;
+            transition: 0.2s;
+            transform: translate(32em, -13em);
+            position: relative;
+          }
+          
+          /* При наведении на карточку - меняем цвет тени */
+          .card3:hover {
+            box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+          }
+          
+          .card3__top {
+            flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+            position: relative;
+            overflow: hidden; /* Скрываем, что выходит за пределы */
+          }
+          
+          /* Контейнер для картинки */
+          .card3__image {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+          .card3__image > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+            transition: 0.2s;
+          }
+          
+          /* При наведении - увеличиваем картинку */
+          .card3__image:hover > img {
+            transform: scale(1.1);
+          }
+          
+          /* Размещаем скидку на товар относительно изображения */
+          .card3__label {
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: #ff6633;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+          }
+          
+          .card3__bottom {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+            padding: 10px;
+          }
+          
+          .card3__prices {
+            display: flex;
+            margin-bottom: 10px;
+            flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+          }
+          
+          .card3__price::after {
+            content: "₽";
+            margin-left: 4px;
+            position: relative;
+          }
+          
+          .card3__price--discount {
+            font-weight: 700;
+            font-size: 19px;
+            color: #414141;
+            display: flex;
+            flex-wrap: wrap-reverse;
+          }
+          
+          .card3__price--discount::before {
+            content: "Со скидкой";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card3__price--common {
+            font-weight: 400;
+            font-size: 17px;
+            color: #606060;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: flex-end;
+          }
+          
+          .card3__price--common::before {
+            content: "Обычная";
+            font-weight: 400;
+            font-size: 13px;
+            color: #000000;
+          }
+          
+          .card3__title {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 150%;
+            color: #414141;
+          }
+          
+          .card3__title:hover {
+            color: #ff6633;
+          }
+          
+          .card3__add {
+            display: block;
+            width: 100%;
+            font-weight: 400;
+            font-size: 17px;
+            color: #ff1e00;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ff3300;
+            border-radius: 4px;
+            cursor: pointer; /* Меняем курсор при наведении */
+            transition: 0.2s;
+            margin-top: auto; /* Прижимаем кнопку к низу карточки */
+          }
+          
+          .card3__add:hover {
+            border: 1px solid #ff6633;
+            background-color: #ff6633;
+            color: #fff;
+          }
+
+
+          div#proizv {
+            position: relative;
+            }
+            .proizv {
+            position: absolute;
+            bottom: 50%;
+            transform: translate(-0.1em, 12em);
+            text-transform: uppercase;
+            color: #000000;
+            width: 1500px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            .proizv {
+            font: 24px/54px courier ;
+            text-align: center;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-size: 96px;
+            padding: 0px;
+            }
+
+
+            .proizv_img1{
+              position: absolute;
+              width: 380px;
+              height: 210px;
+              left: -2px;
+              top: 0px;
+              transform: translate(3em, 80em);
+            }
+
+            .proizv_img2{
+              position: absolute;
+              width: 380px;
+              height: 210px;
+              left: -2px;
+              top: 0px;
+              transform: translate(17em, 80em);
+            }
+
+            .proizv_img3{
+              position: absolute;
+              width: 380px;
+              height: 210px;
+              left: -2px;
+              top: 0px;
+              transform: translate(31em, 80em);
+            }
+
+            .niz{
+              position: absolute;
+              width: 380px;
+              height: 210px;
+              left: -2px;
+              top: 0px;
+              transform: translate(0em, 90em);
+            }
+
+            .youtube{
+              position: absolute;
+              left: -2px;
+              top: 0px;
+              transform: translate(0em, 90em);
+            }
+
+            .vk{
+              position: absolute;
+              left: -2px;
+              top: 0px;
+              transform: translate(3em, 90em);
+            }
+
+            div#tekst_sverhu_kartinki_niz1 {
+              position: relative;
+              }
+              .tekst_sverhu_kartinki_niz1 {
+              position: absolute;
+              bottom: 50%;
+              transform: translate(-5.3em, 55em);
+              text-transform: uppercase;
+              color: #000000;
+              width: 500px;
+              }
+              .tekst_sverhu_kartinki_niz1 span {
+              font: bold 24px/54px Helvetica, Sans-Serif;
+          
+              padding: 0px;
+              }
+
+              div#tekst_sverhu_kartinki_niz2 {
+                position: relative;
+                }
+                .tekst_sverhu_kartinki_niz2 {
+                position: absolute;
+                bottom: 50%;
+                transform: translate(-5em, 53em);
+                text-transform: uppercase;
+                color: #000000;
+                width: 500px;
+                }
+                .tekst_sverhu_kartinki_niz2 span {
+                font: bold 24px/54px Helvetica, Sans-Serif;
+            
+                padding: 0px;
+                }

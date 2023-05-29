@@ -1,0 +1,236 @@
+.header {
+  padding-top: 44px;
+  padding-bottom: 31px;
+  display: flex;
+
+  &__menu {
+    flex: 2;
+    display: flex;
+    > div {
+      flex: 1;
+      a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #161616;
+        text-decoration: none;
+        transition: 0.3s;
+        opacity: 1;
+      }
+      a:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  &__logo {
+    flex: 1
+    a {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #161616;
+      text-decoration: none;
+      transition: 0.3s;
+      opacity: 1;
+    }
+  }
+  &__icons {
+    flex: 1;
+    display: flex;
+    > div {
+      padding-right: 30px;
+    }
+    > div:last-child {
+      padding-right: 0;
+    }
+    justify-content: right;
+  }
+  .header__logo{
+    position: absolute;
+    width: 1600px;
+    height: 584px;
+    left: -2px;
+    top: 0px;
+  }
+  div#tekst_sverhu_kartinki {
+    position: relative;
+    }
+    .tekst_sverhu_kartinki_1 {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(60em, -10em);
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 500px;
+    }
+    .tekst_sverhu_kartinki_1 span {
+    font: bold 24px/54px Helvetica, Sans-Serif;
+
+    padding: 0px;
+    }
+    div.background {
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 200%;
+      height: 200%;
+    }
+    
+    .background {
+      position: absolute;
+      width: 1920px;
+      height: 4239px;
+      left: -223px;
+      top: 484px;
+    }
+    .buttom1 {
+      position: relative;
+      width: 50%;
+    }
+    
+    .buttom1 img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .buttom1 .btn {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #312920;
+      color: #F2C13C;
+      padding: 7px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 200px;
+      height: 50px;
+      left: 227px;
+      top: 80px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 32px;
+
+background: #312920;
+    }
+    
+    .buttom1 .btn:hover {
+      background-color: black;
+    }
+
+    .buttom2 {
+      position: relative;
+      width: 50%;
+    }
+    
+    .buttom2 img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .buttom2 .btn {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #312920;
+      color: #F2C13C;
+      padding: 7px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 200px;
+      height: 50px;
+      left: 527px;
+      top: 80px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 32px;
+      overflow: hidden;
+      white-space: nowrap;
+
+background: #312920;
+    }
+    
+    .buttom2 .btn:hover {
+      background-color: black;
+    }
+
+    .buttom3 {
+      position: relative;
+      width: 50%;
+    }
+    
+    .buttom3 img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .buttom3 .btn {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #312920;
+      color: #F2C13C;
+      padding: 7px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 200px;
+      height: 50px;
+      left: 827px;
+      top: 80px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 32px;
+      overflow: hidden;
+      white-space: nowrap;
+
+background: #312920;
+    }
+    
+    .buttom3 .btn:hover {
+      background-color: black;
+    }
+}
+
+    .buttom4 {
+      position: relative;
+      width: 50%;
+    }
+
+    .buttom4 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .buttom4 .btn {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #312920;
+      color: #F2C13C;
+      padding: 7px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 300px;
+      height: 50px;
+      left: 1211px;
+      top: 80px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 32px;
+      overflow: hidden;
+      white-space: nowrap;
+
+    background: #312920;
+    }
+
+    .buttom4 .btn:hover {
+      background-color: black;
+    }
+

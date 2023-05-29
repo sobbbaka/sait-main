@@ -1,0 +1,108 @@
+.home {
+    margin-bottom: 100px;
+
+    &__header {
+        display: flex;
+
+        img {
+            height: 100%;
+        }
+
+        &__text {
+            background: #154444;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 100px;
+            padding-right: 50px;
+
+            &__extra-large-text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 68px;
+                margin-bottom: 20px;
+            }
+
+            color: #ffffff;
+        }
+    }
+
+    &__payment-services {
+        margin-top: 140px;
+
+        &__block-title {
+            display: flex;
+            justify-content: center;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+
+            color: #244d4d;
+        }
+
+        &__block-payments {
+            margin-top: 40px;
+            display: flex;
+
+            >div {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+div#privet {
+    position: relative;
+}
+
+.privet {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(17em, 25em);
+    text-transform: uppercase;
+    color: #000000;
+    width: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.privet span {
+    font: bold 24px/54px Helvetica, Sans-Serif;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 62px;
+    padding: 0px;
+}
+
+div#text_priveta {
+    position: relative;
+}
+
+.text_priveta {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-3.5em, 97em);
+    text-transform: uppercase;
+    color: #000000;
+    width: 1500px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text_priveta {
+    font: bold 24px/54px Helvetica, Sans-Serif;
+    text-align: center;
+    font-size: 33px;
+    padding: 0px;
+}
